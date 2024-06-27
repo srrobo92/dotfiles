@@ -1,0 +1,6 @@
+color:
+  # When to colorize the output.
+  # When "classic" is set, this is set to "never".
+  # Possible values: never, auto, always
+  when: always
+  theme: custom
