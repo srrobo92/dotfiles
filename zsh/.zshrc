@@ -1,10 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 
 export LD_LIBRARY_PATH=/usr/local/lib
-export DOOMBIN=$HOME/.config/emacs/bin
+export DOOMBIN=$HOME/.emacs.d/bin
 export VHDL_LS=$HOME/.local/share/vhdl_ls
 export VHDL_LANG=$HOME/.local/share/vhdl_lang
-export VERIBLE=$HOME/.local/share/verible/verible/bin
+export VERIBLE=$HOME/.local/share/verible/bin
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$DOOMBIN:$VHDL_LS/bin:$VHDL_LANG/bin:$VERIBLE:$PATH
 
 # Path to your Oh My Zsh installation.
@@ -113,7 +113,7 @@ alias com="./compile.sh | grep 'Error\|Warning'"
 alias ls=lsd
 alias cd=z
 alias cdi=zi
-alias cat=batcat
+alias cat=bat
 alias fuck=thefuck
 alias dot="source ~/.zshrc"
 alias ll="lsd -la"
@@ -126,7 +126,7 @@ alias draudio="/media/steve/Workspace/Programming/davinciAudio.sh"
 zle_highlight=('paste:none')
 export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#282a36,hl:#37f499 --color=fg+:#ebfafa,bg+:#212337,hl+:#37f499 --color=info:#f7c67f,prompt:#04d1f9,pointer:#7081d0 --color=marker:#7081d0,spinner:#f7c67f,header:#323449'
 eval "$(zoxide init zsh)"
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
 #zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
 zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
