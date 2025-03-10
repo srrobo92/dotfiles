@@ -106,22 +106,19 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="e ~/.zshrc"
-alias ohmyzsh="e ~/.oh-my-zsh"
-alias vnn='vivado -nolog -nojournal'
-alias com="./compile.sh | grep 'Error\|Warning'"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls=lsd
 alias cd=z
 alias cdi=zi
 alias cat=bat
-alias fuck=thefuck
 alias dot="source ~/.zshrc"
 alias ll="lsd -la"
-alias e="emacsclient -nw -a ''"
-alias ke="emacsclient -e '(kill-emacs)'"
-alias ddoc="doom doc"
-alias ds="doom sync"
 alias draudio="/media/steve/Workspace/Programming/davinciAudio.sh"
+alias workspace="cd /run/media/steve/Workspace"
+alias backroom="cd /run/media/steve/BackroomStorage"
+alias monstro="cd /run/media/steve/Monstro"
+alias games="cd /run/media/steve/Games/"
 
 zle_highlight=('paste:none')
 export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#282a36,hl:#37f499 --color=fg+:#ebfafa,bg+:#212337,hl+:#37f499 --color=info:#f7c67f,prompt:#04d1f9,pointer:#7081d0 --color=marker:#7081d0,spinner:#f7c67f,header:#323449'
