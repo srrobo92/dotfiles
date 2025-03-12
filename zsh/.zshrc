@@ -1,11 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 
 export LD_LIBRARY_PATH=/usr/local/lib
-export DOOMBIN=$HOME/.emacs.d/bin
-export VHDL_LS=$HOME/.local/share/vhdl_ls
-export VHDL_LANG=$HOME/.local/share/vhdl_lang
-export VERIBLE=$HOME/.local/share/verible/bin
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$DOOMBIN:$VHDL_LS/bin:$VHDL_LANG/bin:$VERIBLE:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -106,19 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias ls=lsd
-alias cd=z
-alias cdi=zi
-alias cat=bat
-alias dot="source ~/.zshrc"
-alias ll="lsd -la"
-alias draudio="/media/steve/Workspace/Programming/davinciAudio.sh"
-alias workspace="cd /run/media/steve/Workspace"
-alias backroom="cd /run/media/steve/BackroomStorage"
-alias monstro="cd /run/media/steve/Monstro"
-alias games="cd /run/media/steve/Games/"
+
+source $ZSH_CUSTOM/alias.zsh
 
 zle_highlight=('paste:none')
 export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#282a36,hl:#37f499 --color=fg+:#ebfafa,bg+:#212337,hl+:#37f499 --color=info:#f7c67f,prompt:#04d1f9,pointer:#7081d0 --color=marker:#7081d0,spinner:#f7c67f,header:#323449'
