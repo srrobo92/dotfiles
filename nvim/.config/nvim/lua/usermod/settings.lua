@@ -31,6 +31,7 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 
 -- Show line numbers
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Bash-like tab completions

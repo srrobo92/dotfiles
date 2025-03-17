@@ -9,10 +9,6 @@ require("usermod.remaps")
 -- Setup Theme
 vim.cmd[[colorscheme eldritch]]
 
--- LSPs?
-require'lspconfig'.verible.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    root_dir = function() return vim.uv.cwd() end
-}
-require'lspconfig'.vhdl_ls.setup{}
+-- LSP enables
+vim.lsp.enable('verible_lsp')
+vim.lsp.enable('vhdl_lsp')
