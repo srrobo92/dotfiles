@@ -75,6 +75,7 @@ return {
           },
           { name = 'nvim_lsp' },
           { name = 'ultisnips' },
+          { name = "buffer" },
           { name = 'path' },
           { name = 'nvim_lsp_signature_help' },
         },

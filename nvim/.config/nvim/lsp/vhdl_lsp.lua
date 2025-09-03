@@ -5,6 +5,6 @@ local root_files = {
 return {
     cmd = { "vhdl_ls" },
     filetypes = { "vhdl", "vhd" },
-    root_markers = root_file,
+    root_markers = root_files,
     single_file_support = true,
 }
