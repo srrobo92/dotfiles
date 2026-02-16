@@ -12,3 +12,7 @@ vim.keymap.set('n', "N", "Nzzzv")
 
 
 vim.keymap.set('x', '<leader>p', "\"_dP")
+
+-- Clear highlights on search when pressing <Esc> in normal mode
+--  See `:help hlsearch`
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
